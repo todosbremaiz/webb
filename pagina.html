@@ -1,0 +1,534 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mi Segunda página responsive</title> \
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="pagina.css"> 
+    <link rel="stylesheet" href="stiles.css"> 
+<body>
+    <div class="contenedor">
+
+        <nav class="topnav" id="myTopnav">
+            <a href="#home" class="active">Inicio</a> 
+            <a href="#maiz">Sobre el maíz</a>
+            <a href="#history">Historia</a>
+            <a href="#about">Sobre nosotros</a>
+            <a href="#info">Información</a>
+            <a href="#video">Video</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                <i class="fa fa-bars"></i> 
+            </a>
+        </nav> 
+
+        <header>
+            <h1>TODO SOBRE EL MAÍZ</h1> 
+        </header>
+
+        <section class="hero" id="home">
+            <img src="maiz.jpg" alt="Campo de maíz" style="width:100%; height:auto;">
+            <div class="hero-content"> 
+                <h2>El maíz, el tesoro de México</h2> 
+                <p>Descubre la importancia del maíz en la alimentación, la industria y la cultura mexicana.</p>
+                <a href="#main" class="btn">Saber más</a>
+            </div>
+        </section>
+
+        <div class="cajita">
+            <section class="main" id="main"> 
+                <h2>¿Qué es el maíz?</h2>
+                <img src="infoMaiz.jpg" alt="Descripción de la imagen" style="width:100%; height:auto;"> 
+                <p>
+                    El maíz es fundamental en la alimentación y la economía de México. Se utiliza para producir una gran variedad de productos.
+                    En 2017, Bolivia importó 79.7 millones de kg de maíz, con Argentina como principal proveedor, seguido de Brasil, México, Chile y Estados Unidos.
+                </p>
+            </section>
+
+            <aside id="history"> 
+                <img src="estadisticas.jpg" alt="Historia del maíz" style="width:100%; height:auto;">
+                <p>
+                    <h2>Historia del Maíz:</h2><br>
+                    <h3>Orígenes:</h3>
+                    <br>Domesticado hace 7,000 a 9,000 años en México.<br>
+                    <h3>Cultivo Prehispánico:</h3>
+                    Sagrado para mayas y aztecas.<br>
+                    <h3>Expansión:</h3> Introducido globalmente en el siglo XVI.<br>
+                    <h3>Importancia Actual:</h3> Fundamental como alimento e ingrediente industrial.<br>
+                    <h3>Cultura:</h3> Símbolo de identidad en México, presente en tortillas y tamales.
+                </p>
+            </aside>
+        </div>
+
+ <section id="contact">
+            <h3>
+                El maíz es una de las especies cultivadas más importantes del mundo, utilizado en diversas aplicaciones alimenticias, como tortillas y productos industriales, destacando su relevancia en la economía y la cultura.
+            </h3>
+            <img src="hq720.jpg" alt="Maíz" style="width:100%; height:auto;"> 
+ </section>
+
+ }<section id="about">
+    <h2>Sobre nosotros</h2>
+    <p>
+        Nuestro objetivo es educar y compartir la importancia de este grano, desde su historia y variedades hasta su relevancia en la economía y la gastronomía mexicana. Nos dedicamos a investigar y promover el conocimiento del maíz como parte fundamental de nuestra cultura.
+    </p>
+
+    <div class="equipo-member" id="miembro1" onmouseover="mostrarInformacion(1)" onmouseout="ocultarInformacion(1)">
+        <img src="integrantes.jpg" alt="Miembro del equipo 1">
+        <div class="informacion-equipo" id="info1">
+            <h3>Delta A</h3>
+            <p>Somos un grupo de estudiantes del CBTIS 226 apasionado por la agricultura, la cultura y el impacto del maíz en nuestra sociedad.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="info"> 
+            <h2>Información</h2>
+            <div class="info-item">
+                <div class="info-title">Variedad de tipos de maíz:</div>
+                <div class="info-description">Existen diferentes tipos de maíz, como el blanco, amarillo, rojo y azul, cada uno con características especiales que influyen en su sabor, color y uso culinario.</div>
+            </div>
+            <div class="info-item">
+                <div class="info-title">Valor nutricional:</div>
+                <div class="info-description">El maíz es una excelente fuente de carbohidratos, fibra, vitaminas (como B y C) y minerales como el magnesio y el potasio, aportando energía y nutrientes esenciales.</div>
+            </div>
+            <div class="info-item">
+                <div class="info-title">Usos culinarios:</div>
+                <div class="info-description">Es fundamental en la gastronomía, siendo la base de alimentos como tortillas, tamales, sopes, atoles, y más, que forman parte de la cocina tradicional mexicana.</div>
+            </div>
+            <div class="info-item">
+                <div class="info-title">Producción sostenible:</div>
+                <div class="info-description">La producción de maíz puede ser sostenible si se implementan prácticas agrícolas que respeten el medio ambiente, como la rotación de cultivos, el uso de abonos naturales y la conservación del agua.</div>
+            </div>
+        </section>
+               
+
+        <section id="video">
+            <h2>Video</h2>
+            <p>
+                Mira nuestro video sobre la importancia del maíz en la cultura y la economía mexicana.
+            </p>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </section>
+    </div>
+
+    <script> 
+        function myFunction() { 
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") { 
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function mostrarInformacion(id) {
+            var info = document.getElementById("info" + id);
+            info.style.height = "200px"; 
+        }
+
+        function ocultarInformacion(id) {
+            var info = document.getElementById("info" + id);
+            info.style.height = "0";
+        }
+    </script>
+</body>
+</html>
+
+
+        <div class="contenedor_galeria">
+            <div class="imagen_descripcion">
+                <img src="maiz1.jpg" alt="Maíz 1">
+                <p>El maíz se planta en filas para permitir un crecimiento adecuado, con cada semilla colocada a una profundidad específica en el suelo fértil.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz2.jpg" alt="Maíz 2">
+                <p>Para cosechar, se retira la mazorca de la planta, y luego se extraen los granos manualmente o mediante máquinas especiales.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz3.jpg" alt="Maíz 3">
+                <p>Existen diversas variedades de maíz, como el maíz amarillo, blanco y morado, cada uno con características y usos distintos.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz4.jpg" alt="Maíz 4">
+                <p>El maíz es fundamental en la agricultura, siendo la base para numerosos productos y prácticas en muchas culturas.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz5.jpg" alt="Maíz 5">
+                <p>En la industria, los granos de maíz se utilizan para elaborar harina, almidón, aceite y otros derivados.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz6.jpg" alt="Maíz 6">
+                <p>El maíz tierno es una delicia popular en muchas culturas y se consume hervido, asado o en sopas.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz7.jpg" alt="Maíz 7">
+                <p>Los granos de maíz también se usan para hacer tortillas, tamales y otros platos tradicionales en América Latina.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz8.jpg" alt="Maíz 8">
+                <p>En el ámbito culinario, el maíz también se emplea para hacer palomitas, un snack muy popular en todo el mundo.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz9.jpg" alt="Maíz 9">
+                <p>El maíz morado se utiliza en bebidas y postres tradicionales debido a su color y sabor característicos.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz10.jpg" alt="Maíz 10">
+                <p>El maíz también se emplea en la producción de etanol, una fuente de biocombustible.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz11.jpg" alt="Maíz 11">
+                <p>Los granos de maíz son ricos en carbohidratos, lo que los convierte en una fuente de energía importante.</p>
+            </div>
+            <div class="imagen_descripcion">
+                <img src="maiz12.jpg" alt="Maíz 12">
+                <p>El maíz ha sido cultivado y adaptado por diversas civilizaciones durante miles de años, siendo una parte esencial de la cultura alimentaria.</p>
+            </div>
+        </div>
+        
+
+
+
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mi Segunda página responsive</title>
+            <link rel="stylesheet" href="pagina.css">
+            <style>
+                /* Aseguramos que el ícono de hamburguesa se vea bien */
+                .icon {
+                    display: block;  /* Hace que el ícono sea un bloque y no esté alineado con otros elementos */
+                    font-size: 40px;  /* Aumenta el tamaño del ícono */
+                    color: #333;  /* Cambia el color del ícono */
+                    background-color: transparent; /* Asegura que el fondo sea transparente */
+                    padding: 10px;  /* Da algo de espacio alrededor del ícono */
+                    cursor: pointer;  /* Cambia el puntero del ratón a una mano al pasar por encima */
+                }
+        
+                /* Al pasar el mouse sobre el ícono, puedes agregar algún efecto (opcional) */
+                .icon:hover {
+                    color: #ff6600;  /* Cambia el color al pasar el mouse */
+                }
+            </style>
+        </head>
+
+
+        <div class="carousel-container">
+            <!-- Flecha izquierda para mover hacia atrás -->
+            <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
+            
+            <!-- Contenedor del carrusel -->
+            <div class="container" id="carousel">
+                <!-- Las personas se insertan aquí mediante JavaScript -->
+            </div>
+    
+            <!-- Flecha derecha para mover hacia adelante -->
+            <button class="arrow right-arrow" onclick="moveRight()">&#10095;</button>
+        </div>
+    
+        <script src="trabajo.js"></script> <!-- Enlace al archivo JavaScript -->
+     </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="stiles.css">
+</head>
+<body>
+    <section class="team">
+        <h1>Our Team</h1>
+        <p>Nuestro equipo está formado por personas con pasiones diversas que enriquecen nuestro trabajo conjunto. Desde el amor por los libros, los viajes y la música, hasta el deporte, la cocina y la meditación, cada miembro aporta algo único. Juntos, nos apoyamos y motivamos para alcanzar nuestras metas, celebrando nuestras diferencias y trabajando en armonía.</p>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="migue.jpg" alt="Bob Brown">
+                <h2>MIGUEL DEL TORO</h2>
+                <p>Me encanta perderme en un buen libro. Es como viajar sin moverme de donde estoy, y siempre aprendo algo nuevo.</p>
+                <div class="social">
+                    <p>📱 341 118 7530</p> 
+                    <p>📷 @migueldel1931</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="kevin.jpg" alt="Mary Smith">
+                <h2>KEVIN GAEL MEJIA</h2>
+                <p>No hay nada como descubrir lugares nuevos. Me gusta conocer culturas, probar comidas diferentes y ver paisajes que me dejen sin aliento.</p>
+                <div class="social">
+                    <p>📱341 112 9945</p> 
+                    <p>📷 @kev.mejc</p> 
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="carlos.jpg" alt="Nick Dark">
+                <h2>CARLOS CHAVEZ</h2>
+                <p>La música es mi escape. Me acompaña en cada momento del día, ya sea para relajarme, motivarme o simplemente disfrutar.</p>
+                <div class="social">
+                    <p>📱 341 216 82 33</p> 
+                    <p>📷 @i_am_carlos15</p> 
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="javi.jpg" alt="Mark Dowson">
+                <h2>JAVIER OROZCO</h2>
+                <p>Hacer ejercicio es mi forma de liberar tensiones. Ya sea corriendo, jugando al fútbol o entrenando, me siento más fuerte y lleno de energía.</p>
+                <div class="social">
+                    <p>📱 341 240 8332</p> 
+                    <p>📷 @javierorozco826</p> 
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="oliver.jpg" alt="Tom Roe">
+                <h2>OLIVER BIVEROS</h2>
+                <p>Cocinar es mi terapia. Me encanta experimentar con nuevos ingredientes y recetas, y luego disfrutar de la comida que preparo.</p>
+                <div class="social">
+                    <p>📱 341 155 0401</p> 
+                    <p>📷 @oliverbiberos__</p> 
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="emilianoss.jpg" alt="Tom Roe">
+                <h2>MOISES EMILIANO</h2>
+                <p>Me gusta desconectar viendo una buena película o serie. Es una forma de relajarme y, a veces, de ver el mundo desde otra perspectiva.</p>
+                <div class="social">
+                    <p>📱 341 136 5691</p> 
+                    <p>📷 @yon_txs</p> 
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="jona.jpg" alt="John Doe">
+                <h2>JONATHAN MARTINEZ</h2>
+                <p>El baloncesto es mi pasión. Me gusta la adrenalina de cada partido, el trabajo en equipo y la sensación de encestar después de un buen pase. Es un deporte que me reta y me hace sentir vivo.</p>
+                <div class="social">
+                    <p>📱 341 173 48 50</p> 
+                    <p>📷 @Mcemilianomontes</p> 
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="amigodiego.jpg" alt="John Doe">
+                <h2>ARMANDO ORNELAS</h2>
+                <p>La meditación me ayuda a encontrar calma y claridad en medio del caos. Es mi momento para reconectar conmigo mismo y dejar ir el estrés.</p>
+                <div class="social">
+                    <p>📱 341 411 2288</p> 
+                    <p>📷 @a_oh_j</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+<h3>UBICACION</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.771777084133!2d-103.4591715895385!3d19.722338331288157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f86acca4a8509%3A0x6b82219bd5cc165f!2sCBTis%20226%20%22Jos%C3%A9%20Mar%C3%ADa%20Gonz%C3%A1lez%20de%20Hermosillo%22!5e0!3m2!1ses-419!2smx!4v1719222026329!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <SEction id="ACORDEON">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">¿Qué es el maiz</div>
+                        <div class="accordion-content">
+                            <p>El maíz es un cereal originario de América, base de la alimentación en muchas culturas.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">¿Cuántos tipos de maíz existen?</div>
+                        <div class="accordion-content">
+                            <p>Hay varios tipos, como maíz amarillo, blanco, azul, dulce y palomero. </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">¿Para qué se utiliza el maíz?</div>
+                        <div class="accordion-content">
+                            <p>Se utiliza en alimentos, forrajes, biocombustibles y productos industriales.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">¿Es el maíz nutritivo?</div>
+                        <div class="accordion-content">
+                            <p>Sí, contiene carbohidratos, fibra, vitaminas y minerales como el magnesio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">¿Dónde se cultiva el maíz?</div>
+                        <div class="accordion-content">
+                            <p>Se cultiva en todo el mundo, siendo EE. UU. UU., China y México los mayores productores.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        const headers = document.querySelectorAll(".accordion-header");
+            
+                        headers.forEach(header => {
+                            header.addEventListener("click", () => {
+                                const content = header.nextElementSibling;
+            
+                                // Cerrar todos los contenidos abiertos
+                                document.querySelectorAll(".accordion-content").forEach(c => {
+                                    if (c !== content) c.style.display = "none";
+                                });
+            
+                                // Alternar el contenido actual
+                                content.style.display = content.style.display === "block" ? "none" : "block";
+                            });
+                        });
+                    });
+                </script>
+            </SEction>
+
+
+            <div class="hola">
+                <center>
+                        <div class="contact-form" id="contact-form">
+                            <h2>Contact Us</h2>
+                        
+                            <!-- Mensaje de confirmación -->
+                            <div id="confirmation-message" class="confirmation-message" style="display: none;">
+                              <p>¡Mensaje enviado exitosamente!</p>
+                            </div>
+                        
+                            <!-- Formulario de contacto -->
+                            <form id="form" onsubmit="submitForm(event)">
+                              <label for="name">Your Name *</label>
+                              <input type="text" id="name" name="name" required>
+                              
+                              <label for="email">Your Email *</label>
+                              <input type="email" id="email" name="email" required>
+                              
+                              <label for="phone">Your Phone *</label>
+                              <input type="tel" id="phone" name="phone" required>
+                              
+                              <label for="message">Your Message *</label>
+                              <textarea id="message" name="message" rows="5" required></textarea>
+                              
+                              <button type="submit">Send Message</button>
+                            </form>
+                          </div>
+                        
+                        
+                        
+                          <script>
+                            // Función para manejar el envío del formulario
+                            function submitForm(event) {
+                              event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+                        
+                              // Muestra el mensaje de éxito
+                              document.getElementById("confirmation-message").style.display = "block";
+                        
+                              // Limpiar los campos del formulario
+                              document.getElementById("form").reset(); // Esto limpia todos los campos del formulario
+                            }
+                          </script>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <footer>
+                        <div class="container">
+                        <div class="col-md-4">
+                        <h5>Sobre Nosotros</h5>
+                        <p>"Nuestra página habla sobre el maíz y todo lo que no sabías."</p>
+                        </div>
+                        <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-a">
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#home" class="active">Inicio</a></li>
+                        <li><a href="#history">Historia</a></li>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#info">Información</a></li>
+                        <li><a href="#video">Video</a></li>
+                        </ul>
+                        </div>
+                        <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <p>123 CBTIS 226, CIUDAD GUZMAN, JALISCO</p>
+                        <p>Email: contact@example.com</p>
+                        <p>Teléfono: +123 456 789</p>
+                        </div>
+                        </div>
+                        </footer>
+                    </div>
+                    
+                
+                </style>
+                </head>
+                
+                <body>
+                </center>
+                
+                
